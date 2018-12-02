@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smart Home</string>
+    <string name="about_us">About Us</string>
+    <string name="business_name">Smart Home Interiors and Design</string>
+    <string name="location">304, International Business Center, Athwalines, Piplod, Surat, Gujarat.</string>
+    <string name="email_adress">smarthome@gmail.com</string>
+    <string name="phone_number">+91 8460958495</string>
+    <string name="schedule">9 am to 6 pm</string>
+    <string name="discription">Smart Home Interiors and Design is an interior design firm with eight years of experience in residential projects.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="map_location_search_link"><![CDATA[https://www.google.com/maps/search/?api=1&query=International+Business+Center+Athwalines+Piplod+Surat+Gujarat]]></string>
+</resources>

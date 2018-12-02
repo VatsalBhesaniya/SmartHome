@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <AdapterViewFlipper
+            android:id="@+id/adapterViewFlipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:flipInterval="2000" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/logo_padding"
+            android:paddingTop="@dimen/logo_padding"
+            android:scaleType="center"
+            android:src="@drawable/smarthome" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/table_padding"
+            android:shrinkColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:layout_span="2"
+                    android:gravity="center"
+                    android:text="@string/about_us"
+                    android:textAppearance="?android:textAppearanceLarge"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="@dimen/raw_padding">
+                <ImageView
+                    android:paddingRight="@dimen/icon_padding"
+                    android:src="@drawable/ic_business_black_24dp"/>
+                <TextView
+                    android:text="@string/business_name"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="@dimen/raw_padding">
+                <ImageView
+                    android:onClick="getLocation"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:src="@drawable/ic_location_on_black_24dp"/>
+                <TextView
+                    android:onClick="getLocation"
+                    android:text="@string/location"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="@dimen/raw_padding">
+                <ImageView
+                    android:onClick="contactUs"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:src="@drawable/ic_email_black_24dp"/>
+                <TextView
+                    android:id="@+id/emailAdress"
+                    android:onClick="contactUs"
+                    android:text="@string/email_adress"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="@dimen/raw_padding">
+                <ImageView
+                    android:onClick="phoneCall"
+                    android:paddingRight="@dimen/icon_padding"
+                    android:src="@drawable/ic_call_black_24dp"/>
+                <TextView
+                    android:id="@+id/contactNumber"
+                    android:onClick="phoneCall"
+                    android:text="@string/phone_number"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="@dimen/raw_padding">
+                <ImageView
+                    android:paddingRight="@dimen/icon_padding"
+                    android:src="@drawable/ic_schedule_black_24dp"/>
+                <TextView
+                    android:text="@string/schedule"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="@dimen/raw_padding">
+                <ImageView
+                    android:paddingRight="@dimen/icon_padding"
+                    android:src="@drawable/ic_description_black_24dp"/>
+                <TextView
+                    android:text="@string/discription"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/btn_color"
+            android:onClick="contactUs"
+            android:text="@string/contact_us"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+</ScrollView>
